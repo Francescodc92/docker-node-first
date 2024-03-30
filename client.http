@@ -14,3 +14,5 @@ Content-Type: application/json
 ### get all products
 GET  {{baseUrl}}/products
 
+### get product by id
+GET  {{baseUrl}}/products/6607f9e23c31bc176c490399

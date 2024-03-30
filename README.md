@@ -10,6 +10,11 @@ docker-compose build
 docker-compose up -d
 ```
 
+### test delle rotte 
+- create: post `http://localhost:3000/products`
+- Allproduct: get `http://localhost:3000/products`
+
+
 ## TECNOLOGIE
 - nodeJs
 - express
