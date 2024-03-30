@@ -7,30 +7,30 @@ POST {{baseUrl}}/products
 Content-Type: application/json
 
 {
-    "name": "test",
+    "name": "laptop",
     "price": 5000,
     "quantity": 50,
-    "category": "Books"
+    "category": "66082666fce2cc75b77342d0"
 }
 
 ### get all products
 GET  {{baseUrl}}/products
 
 ### get product by id
-GET  {{baseUrl}}/products/660812bd25e8b7040012f948
+GET  {{baseUrl}}/products/660826e62e2ad8b833948c46
 
 ### upodate product 
-PUT   {{baseUrl}}/products/660812bd25e8b7040012f948
+PUT   {{baseUrl}}/products/660826e62e2ad8b833948c46
 Content-Type: application/json
 
 {
     "name": "test update",
     "price": 5025,
-    "category": "electronics"
+    "category": "660820ecf45c961d11bd4d95"
 }
 
 ### delete product by id
-DELETE   {{baseUrl}}/products/660812bd25e8b7040012f948
+DELETE   {{baseUrl}}/products/660820c0f45c961d11bd4d88
 
 
 ### CATEGORIES
@@ -40,7 +40,7 @@ POST {{baseUrl}}/categories
 Content-Type: application/json
 
 {
-    "name": "test-2"
+    "name": "Electronics"
 }
 
 ### get all categories
@@ -55,4 +55,4 @@ Content-Type: application/json
 }
 
 ### delete categories
-DELETE   {{baseUrl}}/categories/66081a4e11134f043e624da9
+DELETE   {{baseUrl}}/categories/660820ecf45c961d11bd4d95

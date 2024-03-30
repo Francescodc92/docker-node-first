@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import Category from "../models/Category.js";
+import Product from "../models/Product.js";
 
 //create
 const store = async (req, res)=> {
@@ -72,6 +73,12 @@ const destroy = async (req, res) => {
         if(!category){
             return res.status(404).json({error: 'category not found'}) 
         }else{
+            const productsCount = await Product.countDocuments({category:category._id})
+
+            if(productsCount > 0){
+                return res.status(409).json({error: `Category ${category.name} is being use in ${productsCount} products`})
+            }
+
             await category.deleteOne();
         }
 
