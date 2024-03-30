@@ -16,6 +16,7 @@ docker-compose up -d
 - create: post `http://localhost:3000/products`
 - AllProducts: get `http://localhost:3000/products`
 - SingleProduct: get `http://localhost:3000/products/ id prodotto`
+- AllProduct-categories: get `http://localhost:3000/products/categories/ id categoria`
 - updateProduct: put `http://localhost:3000/products/ id prodotto`
 - deleteProduct: delete `http://localhost:3000/products/ id prodotto`
 

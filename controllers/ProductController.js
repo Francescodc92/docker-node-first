@@ -62,6 +62,23 @@ const show = async (req, res)=> {
     }
 }
 
+// get by category
+const productByCategory = async (req, res) =>{
+    try {
+        const categoryID = req.params.categoryID;
+
+        if(!mongoose.isValidObjectId(categoryID)){
+            return res.status(422).json({error: 'category id is not valid'}) 
+        }
+
+        const products = await Product.find({category: categoryID}).populate({path: 'category', select: '_id name'});
+
+        return res.status(200).json(products);
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 // update 
 const update = async (req, res)=> {
     try {
@@ -111,4 +128,4 @@ const destroy = async (req, res) => {
     }
 }
 
-export {store, index, show, update, destroy}
+export {store, index, show, productByCategory, update, destroy}

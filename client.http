@@ -7,10 +7,10 @@ POST {{baseUrl}}/products
 Content-Type: application/json
 
 {
-    "name": "laptop",
+    "name": "laptop-3",
     "price": 5000,
     "quantity": 50,
-    "category": "66082666fce2cc75b77342d0"
+    "category": "660820ecf45c961d11bd4d95"
 }
 
 ### get all products
@@ -18,6 +18,9 @@ GET  {{baseUrl}}/products
 
 ### get product by id
 GET  {{baseUrl}}/products/660826e62e2ad8b833948c46
+
+### get product by categoryID
+GET  {{baseUrl}}/products/categories/660820ecf45c961d11bd4d95
 
 ### upodate product 
 PUT   {{baseUrl}}/products/660826e62e2ad8b833948c46
