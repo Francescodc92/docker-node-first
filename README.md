@@ -20,7 +20,10 @@ docker-compose up -d
 - deleteProduct: delete `http://localhost:3000/products/ id prodotto`
 
 ### Categories
-- create: post `http://localhost:3000/products`
+- create: post `http://localhost:3000/categories`
+- AllCategories: get `http://localhost:3000/categories`
+- updateCategory: put `http://localhost:3000/categories/ id categoria`
+- deleteCategory: delete `http://localhost:3000/categories/ id categoria`
 
 ## TECNOLOGIE
 - nodeJs

@@ -1,6 +1,8 @@
 import Product from '../models/Product.js';
 import mongoose from 'mongoose';
 
+
+//create
 const store = async (req, res) =>{
     const {name, price, quantity, category} = req.body;
 
@@ -23,6 +25,7 @@ const store = async (req, res) =>{
     }
 }
 
+// get all 
 const index = async (req, res)=> {
     try {
         const products = await Product.find();
@@ -32,6 +35,7 @@ const index = async (req, res)=> {
     }
 }
 
+// get by id
 const show = async (req, res)=> {
     try {
         const productID = req.params.id;
@@ -52,6 +56,7 @@ const show = async (req, res)=> {
     }
 }
 
+// update 
 const update = async (req, res)=> {
     try {
         const productID = req.params.id;
@@ -73,6 +78,7 @@ const update = async (req, res)=> {
     }
 }
 
+//delete
 const destroy = async (req, res) => {
     try {
         const productID = req.params.id;

@@ -35,10 +35,24 @@ DELETE   {{baseUrl}}/products/660812bd25e8b7040012f948
 
 ### CATEGORIES
 
+### create category
 POST {{baseUrl}}/categories
 Content-Type: application/json
 
 {
-    "name": "book"
+    "name": "test-2"
 }
 
+### get all categories
+GET  {{baseUrl}}/categories
+
+### upodate categories 
+PUT   {{baseUrl}}/categories/66081800067f451714607433
+Content-Type: application/json
+
+{
+    "name": "test-2"
+}
+
+### delete categories
+DELETE   {{baseUrl}}/categories/66081a4e11134f043e624da9

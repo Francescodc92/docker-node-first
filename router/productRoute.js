@@ -11,7 +11,7 @@ productRouter.get('/products', index);
 //get Product by ID
 productRouter.get('/products/:id', show);
 
-//get Product by ID
+//update Product by ID
 productRouter.put('/products/:id', update);
 
 //delete Product by ID
