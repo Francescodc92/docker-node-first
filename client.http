@@ -1,5 +1,7 @@
 @baseUrl = http://localhost:3000
 
+###PRODUCTS
+
 ### create Product
 POST {{baseUrl}}/products
 Content-Type: application/json
@@ -29,3 +31,14 @@ Content-Type: application/json
 
 ### delete product by id
 DELETE   {{baseUrl}}/products/660812bd25e8b7040012f948
+
+
+### CATEGORIES
+
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+    "name": "book"
+}
+

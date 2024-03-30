@@ -10,12 +10,17 @@ docker-compose build
 docker-compose up -d
 ```
 
-### test delle rotte 
+## test delle rotte 
+
+### Products
 - create: post `http://localhost:3000/products`
 - AllProducts: get `http://localhost:3000/products`
 - SingleProduct: get `http://localhost:3000/products/ id prodotto`
 - updateProduct: put `http://localhost:3000/products/ id prodotto`
 - deleteProduct: delete `http://localhost:3000/products/ id prodotto`
+
+### Categories
+- create: post `http://localhost:3000/products`
 
 ## TECNOLOGIE
 - nodeJs
