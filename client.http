@@ -5,7 +5,7 @@ POST {{baseUrl}}/products
 Content-Type: application/json
 
 {
-    "name": "phone",
+    "name": "test",
     "price": 5000,
     "quantity": 50,
     "category": "Books"
@@ -15,4 +15,17 @@ Content-Type: application/json
 GET  {{baseUrl}}/products
 
 ### get product by id
-GET  {{baseUrl}}/products/6607f9e23c31bc176c490399
+GET  {{baseUrl}}/products/660812bd25e8b7040012f948
+
+### upodate product 
+PUT   {{baseUrl}}/products/660812bd25e8b7040012f948
+Content-Type: application/json
+
+{
+    "name": "test update",
+    "price": 5025,
+    "category": "electronics"
+}
+
+### delete product by id
+DELETE   {{baseUrl}}/products/660812bd25e8b7040012f948
