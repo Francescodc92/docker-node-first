@@ -33,5 +33,3 @@ docker-compose up -d
 - dotenv
 - docker
 - mongoDB
-
-  ciao 4
